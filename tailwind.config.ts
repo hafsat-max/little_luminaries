@@ -14,6 +14,9 @@ const config: Config = {
         blue: {
           primary: "#15254E",
         },
+        grey: {
+          1: "#fff",
+        },
       },
     },
   },
