@@ -10,13 +10,24 @@ const config: Config = {
     extend: {
       colors: {
         background: "var(--background)",
-        foreground: "var(--foreground)",
+        foreground: "white",
         blue: {
           primary: "#15254E",
+        },
+        red: {
+          primary: "#F2411F",
         },
         grey: {
           1: "#fff",
         },
+        white: {
+          DEFAULT: "#FFFFFF",
+          70: "#FFFFFFB2",
+        },
+      },
+      padding: {
+        "9px": "9px",
+        "18px": "18px",
       },
     },
   },
