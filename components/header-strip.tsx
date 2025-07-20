@@ -5,7 +5,7 @@ import { Instagram } from "./icons/instagram";
 
 export const HeaderStrip = () => {
   return (
-    <div className="py-5 bg-blue-primary flex justify-between px-4 flex-col sm:items-center gap-2 sm:flex-row items-start">
+    <div className="py-5 bg-blue-primary flex justify-between px-28 flex-col sm:items-center gap-2 sm:flex-row items-start">
       <section className="flex items-center gap-2">
         <IconClock />
         <h3 className="text-white">

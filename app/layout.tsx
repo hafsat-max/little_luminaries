@@ -2,11 +2,16 @@ import type { Metadata } from "next";
 import "@mantine/core/styles.css";
 import "./globals.css";
 
-import { McLaren } from "next/font/google";
+import { McLaren, Manrope } from "next/font/google";
 import { MantineProvider } from "@mantine/core";
 
-const mcLaren = McLaren({
+export const mcLaren = McLaren({
   weight: "400",
+  subsets: ["latin"],
+  display: "swap",
+});
+export const manrope = Manrope({
+  weight: ["400", "500", "600", "700"],
   subsets: ["latin"],
   display: "swap",
 });
