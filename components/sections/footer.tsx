@@ -12,15 +12,17 @@ import { EmailIcon } from '../icons/email-icon';
 
 export const Footer = () => {
   return (
-    <footer className=" flex flex-col bg-[#000] text-white ">
-      <div className="border-b border-[#F4F4F480] flex items-center gap-[60px] px-[100px]">
-        <div className="flex items-center w-full justify-center gap-4  py-16 ">
-          <div className="border border-[#FFFFFF3D] rounded-full p-18px bg-[#FFFFFF0D]">
+    <footer className=" flex flex-col bg-[url('/Footer.png')] bg-cover bg-no-repeat text-white ">
+      <div className="border-b border-white/30 flex sm:flex-row flex-col items-center sm:gap-[60px] xl:px-[100px] lg:px-20 md:px-12 px-5">
+        <div className="flex items-center border-b-[0.5px] border-white/30 sm:border-0 w-full sm:justify-center gap-4 sm:py-16 py-6 ">
+          <div className="border border-white/25 rounded-full sm:p-[18px] p-[14px] bg-white/5">
             <Phone />
           </div>
           <div className="flex flex-col gap-1">
-            <p className="text-orange text-base">Phone:</p>
-            <p className="text-xl font-medium text-white">(234) 701 459 2427</p>
+            <p className="text-orange xl:text-base text-sm">Phone:</p>
+            <p className="xl:text-xl text-base font-medium text-white">
+              (234) 701 459 2427
+            </p>
           </div>
         </div>
         <Divider
@@ -28,29 +30,33 @@ export const Footer = () => {
           color="#FFFFFF3D"
           className="h-full  "
         />{' '}
-        <div className="flex items-center justify-center w-full gap-4  py-16 ">
-          <div className="border border-[#F4F4F480] rounded-full p-18px bg-[#FFFFFF0D]">
+        <div className="flex items-center sm:justify-center w-full gap-4  sm:py-16 py-6 ">
+          <div className="border border-white/30 rounded-full sm:p-[18px] p-[14px] bg-white/5">
             <Email />
           </div>
           <div className="flex flex-col gap-1">
-            <p className="text-blue-secondary text-base">Email:</p>
-            <p className="text-xl font-medium text-white">
+            <p className="text-blue-secondary xl:text-base text-sm">Email:</p>
+            <p className="font-medium text-white xl:text-xl text-base ">
               abiodunbusari@gmail.com
             </p>
           </div>
         </div>
       </div>
-      <div className="py-[50px] flex items-center justify-between px-[100px]">
+      <div className="py-[50px] flex md:flex-row flex-col md:items-center  items-start md:justify-between justify-center xl:px-[100px] lg:px-20 md:px-12 px-5  ">
         <Image
           width={170}
           height={40}
           alt="logo"
           src="/luminaries-white-logo.svg"
-          className="w-[clamp(100px,15vw,170px)]"
+          className="w-[clamp(100px,15vw,170px)] sm:mb-0 mb-8"
         />
-        <ul className="hidden items-center gap-8 sm:gap-3 md:flex">
+        <ul className=" sm:items-center gap-8 sm:gap-3 flex md:flex-row flex-col  sm:mb-0 mb-8">
           {list.map(({ id, name, link }) => (
-            <Link key={id} href={link} className="px-2 py-[5px] text-lg">
+            <Link
+              key={id}
+              href={link}
+              className="px-2 py-[5px] xl:text-lg text-base"
+            >
               {name}
             </Link>
           ))}
@@ -58,15 +64,23 @@ export const Footer = () => {
         <AppButton text="Book a meeting" />
       </div>
       <div className="p-px bg-gradient-to-r from-[#FFFFFF00] from-5%  via-[#FFFFFF3D] via-20%  to-[#FFFFFF00] h-[0.5px]"></div>
-      <div className="px-[100px] py-10 flex items-center justify-between">
-        <span className="text-sm">
+      <div className="xl:px-[100px] lg:px-20 md:px-12 px-5 sm:py-10 py-6 flex sm:flex-row flex-col sm:items-center justify-between sm:gap-0 gap-5">
+        <span className="xl:text-sm text-xs">
           © 2025 Little Luminaries. All rights reserved.
         </span>
         <ul className="flex items-center gap-5 ">
-          <a href="" target="_blank">
+          <a
+            href=""
+            target="_blank"
+            className="border-[0.5px] border-gray-200 rounded-full p-1 bg-white/5"
+          >
             <Instagram />
           </a>
-          <a href="" target="_blank">
+          <a
+            href=""
+            target="_blank"
+            className="border-[0.5px] border-gray-200 rounded-full p-1 bg-white/5"
+          >
             <EmailIcon />
           </a>
         </ul>

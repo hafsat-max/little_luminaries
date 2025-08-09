@@ -7,17 +7,24 @@ import { Calendar } from '../icons/calendar';
 export const CTASection = () => {
   return (
     <section
-      className={`py-24 px-[120px] flex h-[833px] bg-[#E9F4F7] items-center justify-between ${manrope.className}`}
+      className={` py-12 lg:py-24  xl:px-28 lg:px-20 sm:px-12 px-5  flex sm:flex-row flex-col lg:h-[833px] sm:h-[600px] h-full bg-[#E9F4F7] items-center justify-between ${manrope.className} lg:gap-0 gap-5`}
     >
-      <div className="max-w-[483px] h-full rounded-[20px] w-full bg-red-300"></div>
-      <div className="w-[530px] flex flex-col">
+      <img
+        src="/cta.svg"
+        alt="schedule image"
+        className="object-cover :max-w-[483px]  h-full"
+      />
+      {/* <div className="sm:max-w-[483px] h-full rounded-[20px] sm:w-[483px] bg-[url('/cta.svg')] bg-cover bg-center"></div> */}
+      <div className="xl:w-[530px] lg:w-[400px] flex flex-col">
         <div
-          className={`flex gap-2 items-center border border-blue-secondary  rounded-full px-3.5 py-7px mb-2 $ w-fit`}
+          className={`flex gap-2 items-center border border-blue-secondary  rounded-full px-3.5 py-7px mb-2  w-fit`}
         >
           <LumiRed color="#3AC8EE" />
           <span className="text-sm font-semibold text-black">LET’S TALK</span>
         </div>
-        <p className={`text-6xl font-semibold text-black mb-4 leading-tight `}>
+        <p
+          className={`xl:text-6xl text-4xl font-semibold text-black mb-4 leading-tight `}
+        >
           Every Child is Unique – Let’s Find the Right Path
         </p>
         <p className=" mb-8  text-base text-[#4B5563]">
@@ -26,7 +33,7 @@ export const CTASection = () => {
           child’s learning needs and explore the best program for them.
         </p>
         <AppButton
-          className={`w-fit ${mcLaren.className} py-[18px] px-8`}
+          className={`w-fit ${mcLaren.className} lg:py-[18px] lg:px-8 py-[14px] px-6`}
           icon={<Calendar />}
           text="Book a free consultation"
         />

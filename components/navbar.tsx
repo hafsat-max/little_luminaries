@@ -6,6 +6,7 @@ import { HamburgerIcon } from './icons/hamburger-icon';
 import { Drawer, Button } from '@mantine/core';
 import { useDisclosure } from '@mantine/hooks';
 import AppButton from './common/app-button';
+import { Multiply } from './icons/multiply';
 
 export const list = [
   {
@@ -22,7 +23,7 @@ export const Navbar = () => {
   const [opened, { open, close }] = useDisclosure(false);
 
   return (
-    <div className="flex items-center px-28  justify-between py-4 bg-white-70">
+    <div className="flex items-center xl:px-28 lg:px-20 sm:px-16 px-5  justify-between py-4 bg-white-70">
       <Image
         width={170}
         height={40}
@@ -31,23 +32,62 @@ export const Navbar = () => {
         className="w-[clamp(100px,1vw,170px)]"
       />
 
-      <ul className="hidden items-center gap-8 sm:gap-3 md:flex">
+      <ul className="max-[770px]:hidden flex items-center gap-8 sm:gap-3">
         {list.map(({ id, name, link }) => (
-          <Link key={id} href={link} className="px-2 py-[5px] text-lg">
-            {name}
-          </Link>
+          <li key={id}>
+            <Link href={link} className="px-2 py-[5px] xl:text-lg text-base">
+              {name}
+            </Link>
+          </li>
         ))}
       </ul>
-      <AppButton text="Book a meeting" />
 
-      <div className="md:hidden flex">
-        <Drawer opened={opened} onClose={close} title="Authentication">
-          <HamburgerIcon />
+      <AppButton className="flex max-[770px]:hidden" text="Book a meeting" />
+
+      <div className="hidden max-[770px]:flex">
+        <Drawer
+          opened={opened}
+          onClose={close}
+          withCloseButton={false}
+          classNames={{
+            body: '!p-0 !h-full',
+          }}
+        >
+          <div className="flex flex-col h-full">
+            <div className=" flex justify-between items-center py-6 border-b-[0.5px] border-[#E4E7EC] px-5">
+              {' '}
+              <Image
+                width={170}
+                height={40}
+                alt="logo"
+                src="/luminaries-logo.svg"
+                className="w-[clamp(136px,1vw,170px)]"
+              />
+              <div className="cursor-pointer" onClick={close}>
+                <Multiply />
+              </div>
+            </div>
+            <ul className="flex-1">
+              {list.map(({ id, name, link }) => (
+                <li key={id}>
+                  <Link
+                    href={link}
+                    className="flex justify-between items-center py-6 border-b-[0.5px] border-[#E4E7EC] px-5 xl:text-lg text-base"
+                  >
+                    {name}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+            <div className="p-6">
+              <AppButton className="w-full" text="Book a meeting" />
+            </div>
+          </div>
         </Drawer>
 
-        <Button variant="default" onClick={open}>
-          Open Drawer
-        </Button>
+        <button className="" onClick={open}>
+          <HamburgerIcon />
+        </button>
       </div>
     </div>
   );

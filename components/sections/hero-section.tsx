@@ -6,25 +6,28 @@ import { Star } from '../icons/star';
 
 export const HeroSection = () => {
   return (
-    <section className="max-h-[894px] pl-28 bg-[#FFF8F0] py-[67px] flex items-center justify-between flex-col sm:flex-row gap-10">
+    <section className="max-h-[894px] xl:pl-28 lg:pl-20 sm:pl-12 px-5  bg-[url('/Hero.png')] bg-cover bg-no-repeat py-[67px] flex items-center justify-between flex-col sm:flex-row gap-10">
       <div className="flex flex-col max-w-[435px]">
-        <h1 className="text-6xl font-bold text-black leading-[72px] mb-2">
+        <h1 className="xl:text-6xl text-4xl font-bold text-black xl:eading-[72px] leading-[55px] mb-2 sm:text-start text-center">
           Where Young Minds Shine Bright
         </h1>
-        <p className="text-base font-medium text-black">
+        <p className="xl:text-base text-sm font-medium text-black sm:text-start text-center">
           An engaging online tutoring platform helping kids build strong skills
           in Mathematics, English, Coding, and Reading, right from the comfort
           of home.
         </p>
-        <div className="flex items-center gap-4 mt-7">
-          <AppButton text="Browse courses" className="py-18px px-9" />
+        <div className="flex sm:flex-row flex-col items-center gap-4 mt-7">
+          <AppButton
+            text="Browse courses"
+            className="xl:!py-18px !py-3.5 xl:!px-9 !px-4 xl:!text-base !text-sm"
+          />
           <AppButton
             icon={<Contact />}
             text="Contact us"
-            className="py-18px px-9 bg-transparent !text-black border border-black"
+            className="xl:!py-18px !py-3.5 xl:!px-9 !px-4 xl:!text-base !text-sm bg-transparent !text-black border border-black"
           />
         </div>
-        <div className="flex items-center gap-4 mt-7">
+        <div className="flex items-center sm:justify-start justify-center gap-4 mt-7">
           <div className=" flex items-center">
             <Avatar size={40} />
             <Avatar size={40} className="-ml-5" />
@@ -49,7 +52,7 @@ export const HeroSection = () => {
       <Image
         src="/kids.png"
         alt="Hero Image"
-        className="max-w-[760px] h-[696px] mr-5"
+        className="max-w-[760px] xl:h-[696px] lg:h-[500px] h-[300px] mr-5 !hidden sm:!flex"
       />
     </section>
   );

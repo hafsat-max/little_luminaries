@@ -67,7 +67,10 @@ export const TestimonialSection = () => {
 
   return (
     <section
-      className={`py-24 px-[120px] flex flex-col bg-white items-center ${manrope.className}`}
+      className={`xl:py-24 lg:py-12  py-5 xl:px-28 lg:px-20 md:px-12 px-5 flex flex-col h-fit items-center ${manrope.className}`}
+      style={{
+        background: 'linear-gradient(to bottom, #F5F5F5 0%, #FFFFFF 100%)',
+      }}
     >
       <div
         className={`flex gap-2 items-center border border-red-primary bg-[#FAE5E1] rounded-full px-3.5 py-7px mb-2 `}
@@ -76,11 +79,11 @@ export const TestimonialSection = () => {
         <span className="text-sm font-semibold text-black">TESTIMONIAL</span>
       </div>
       <p
-        className={`text-6xl font-semibold text-center text-black mt-4 leading-tight  max-w-[662px] mb-20`}
+        className={`xl:text-6xl text-4xl  max-w-[450px] font-semibold text-center text-black mt-4 leading-tight  xl:max-w-[662px] mb-20`}
       >
         What Parents & Kids Are Saying
       </p>
-      <div className="grid grid-cols-4  gap-8">
+      <div className="grid xl:grid-cols-4 lg:grid-cols-3 sm:grid-cols-2 grid-cols-1  gap-8">
         {testionials.map((testimonial, index) => {
           const colorSet = bgColors[index % bgColors.length];
           return (
