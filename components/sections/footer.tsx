@@ -1,14 +1,14 @@
-'use client';
-import React from 'react';
-import { Phone } from '../icons/phone';
-import { Divider } from '@mantine/core';
-import { Email } from '../icons/email';
-import Image from 'next/image';
-import { list } from '../navbar';
-import Link from 'next/link';
-import AppButton from '../common/app-button';
-import { Instagram } from '../icons/instagram';
-import { EmailIcon } from '../icons/email-icon';
+"use client";
+import React from "react";
+import { Phone } from "../icons/phone";
+import { Divider } from "@mantine/core";
+import { Email } from "../icons/email";
+import Image from "next/image";
+import { list } from "../navbar";
+import Link from "next/link";
+import AppButton from "../common/app-button";
+import { Instagram } from "../icons/instagram";
+import { EmailIcon } from "../icons/email-icon";
 
 export const Footer = () => {
   return (
@@ -21,7 +21,7 @@ export const Footer = () => {
           <div className="flex flex-col gap-1">
             <p className="text-orange xl:text-base text-sm">Phone:</p>
             <p className="xl:text-xl text-base font-medium text-white">
-              (234) 701 459 2427
+              (+49) 15756993544
             </p>
           </div>
         </div>
@@ -29,7 +29,7 @@ export const Footer = () => {
           orientation="vertical"
           color="#FFFFFF3D"
           className="h-full  "
-        />{' '}
+        />{" "}
         <div className="flex items-center sm:justify-center w-full gap-4  sm:py-16 py-6 ">
           <div className="border border-white/30 rounded-full sm:p-[18px] p-[14px] bg-white/5">
             <Email />

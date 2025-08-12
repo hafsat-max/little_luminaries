@@ -1,29 +1,29 @@
-'use client';
-import Image from 'next/image';
-import Link from 'next/link';
-import React from 'react';
-import { HamburgerIcon } from './icons/hamburger-icon';
-import { Drawer, Button } from '@mantine/core';
-import { useDisclosure } from '@mantine/hooks';
-import AppButton from './common/app-button';
-import { Multiply } from './icons/multiply';
+"use client";
+import Image from "next/image";
+import Link from "next/link";
+import React from "react";
+import { HamburgerIcon } from "./icons/hamburger-icon";
+import { Drawer, Button } from "@mantine/core";
+import { useDisclosure } from "@mantine/hooks";
+import AppButton from "./common/app-button";
+import { Multiply } from "./icons/multiply";
 
 export const list = [
   {
-    name: 'About',
+    name: "About",
     id: 1,
-    link: '#about',
+    link: "#about",
   },
-  { name: 'Courses', id: 2, link: '#testimonials' },
-  { name: 'Features', id: 3, link: '#testimonials' },
-  { name: 'Testimonials', id: 4, link: '#features' },
+  { name: "Courses", id: 2, link: "#courses" },
+  { name: "Features", id: 3, link: "#features" },
+  { name: "Testimonials", id: 4, link: "#testimonials" },
 ];
 
 export const Navbar = () => {
   const [opened, { open, close }] = useDisclosure(false);
 
   return (
-    <div className="flex items-center xl:px-28 lg:px-20 sm:px-16 px-5  justify-between py-4 bg-white-70">
+    <div className="flex items-center xl:px-28 lg:px-20 sm:px-16 px-5  justify-between py-4 bg-white-70 ">
       <Image
         width={170}
         height={40}
@@ -50,12 +50,11 @@ export const Navbar = () => {
           onClose={close}
           withCloseButton={false}
           classNames={{
-            body: '!p-0 !h-full',
+            body: "!p-0 !h-full",
           }}
         >
           <div className="flex flex-col h-full">
             <div className=" flex justify-between items-center py-6 border-b-[0.5px] border-[#E4E7EC] px-5">
-              {' '}
               <Image
                 width={170}
                 height={40}
@@ -79,9 +78,14 @@ export const Navbar = () => {
                 </li>
               ))}
             </ul>
-            <div className="p-6">
+
+            <a
+              href="https://wa.me/4915756993544"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <AppButton className="w-full" text="Book a meeting" />
-            </div>
+            </a>
           </div>
         </Drawer>
 

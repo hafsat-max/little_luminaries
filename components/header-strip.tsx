@@ -1,7 +1,7 @@
-import React from 'react';
-import { IconClock } from './icons/icon-clock';
-import { EmailIcon } from './icons/email-icon';
-import { Instagram } from './icons/instagram';
+import React from "react";
+import { IconClock } from "./icons/icon-clock";
+import { EmailIcon } from "./icons/email-icon";
+import { Instagram } from "./icons/instagram";
 
 export const HeaderStrip = () => {
   return (
@@ -13,10 +13,17 @@ export const HeaderStrip = () => {
         </h3>
       </section>
       <ul className="flex items-center gap-5">
-        <a href="" target="_blank">
+        <a
+          href="https://www.instagram.com/the_little_luminaries?igsh=YXB6amVhb3c0ZzI%3D&utm_source=qr"
+          target="_blank"
+        >
           <Instagram />
         </a>
-        <a href="" target="_blank">
+        <a
+          href="mailto:abiodunabusari@gmail.com"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <EmailIcon />
         </a>
       </ul>

@@ -1,8 +1,9 @@
-import { Avatar, Button, Image } from '@mantine/core';
-import React from 'react';
-import AppButton from '../common/app-button';
-import { Contact } from '../icons/contact';
-import { Star } from '../icons/star';
+import { Avatar, Button, Image } from "@mantine/core";
+import React from "react";
+import AppButton from "../common/app-button";
+import { Contact } from "../icons/contact";
+import { Star } from "../icons/star";
+import Link from "next/link";
 
 export const HeroSection = () => {
   return (
@@ -17,15 +18,23 @@ export const HeroSection = () => {
           of home.
         </p>
         <div className="flex sm:flex-row flex-col items-center gap-4 mt-7">
-          <AppButton
-            text="Browse courses"
-            className="xl:!py-18px !py-3.5 xl:!px-9 !px-4 xl:!text-base !text-sm"
-          />
-          <AppButton
-            icon={<Contact />}
-            text="Contact us"
-            className="xl:!py-18px !py-3.5 xl:!px-9 !px-4 xl:!text-base !text-sm bg-transparent !text-black border border-black"
-          />
+          <Link href="#courses">
+            <AppButton
+              text="Browse courses"
+              className="xl:!py-18px !py-3.5 xl:!px-9 !px-4 xl:!text-base !text-sm"
+            />
+          </Link>
+          <a
+            href="https://wa.me/4915756993544"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <AppButton
+              icon={<Contact />}
+              text="Contact us"
+              className="xl:!py-18px !py-3.5 xl:!px-9 !px-4 xl:!text-base !text-sm bg-transparent !text-black border border-black"
+            />
+          </a>
         </div>
         <div className="flex items-center sm:justify-start justify-center gap-4 mt-7">
           <div className=" flex items-center">
@@ -45,7 +54,7 @@ export const HeroSection = () => {
               </div>
               <p className="text-sm font-normal">5.0</p>
             </div>
-            <p className="text-xs font-normal">From 100+ reviews</p>
+            <p className="text-xs font-normal">From reviews</p>
           </div>
         </div>
       </div>

@@ -1,75 +1,76 @@
-import { manrope } from '@/app/layout';
-import React from 'react';
-import { LumiRed } from '../icons/lumi-red';
-import { QuoteUp } from '../icons/quote-up';
+import { manrope } from "@/app/layout";
+import React from "react";
+import { LumiRed } from "../icons/lumi-red";
+import { QuoteUp } from "../icons/quote-up";
 
 export const TestimonialSection = () => {
   const testionials = [
     {
-      name: 'John Doe',
+      name: "John Doe",
       review:
         "Little Luminaries has transformed my child's learning experience! The tutors are engaging and make learning fun.",
-      relationship: 'Parent',
+      relationship: "Parent",
     },
     {
-      name: 'David O.',
+      name: "David O.",
       review:
-        'The tutors make learning so much fun! My daughter looks forward to every session',
-      relationship: 'Parent',
+        "The tutors make learning so much fun! My daughter looks forward to every session",
+      relationship: "Parent",
     },
     {
-      name: 'Emma (8 y/o)',
+      name: "Emma (8 y/o)",
       review:
-        'I never thought I’d enjoy reading, but now it’s my favorite part of the day!',
-      relationship: 'Student',
+        "I never thought I’d enjoy reading, but now it’s my favorite part of the day!",
+      relationship: "Student",
     },
     {
-      name: 'David O.',
+      name: "David O.",
       review:
         'My son struggled with math before joining Little Luminaries. Now, he loves it and feels so much more confident!"',
-      relationship: 'Parent',
+      relationship: "Parent",
     },
     {
-      name: 'John Doe',
+      name: "John Doe",
       review:
         "Little Luminaries has transformed my child's learning experience! The tutors are engaging and make learning fun.",
-      relationship: 'Parent',
+      relationship: "Parent",
     },
     {
-      name: 'David O.',
+      name: "David O.",
       review:
-        'The tutors make learning so much fun! My daughter looks forward to every session',
-      relationship: 'Parent',
+        "The tutors make learning so much fun! My daughter looks forward to every session",
+      relationship: "Parent",
     },
     {
-      name: 'Emma (8 y/o)',
+      name: "Emma (8 y/o)",
       review:
-        'I never thought I’d enjoy reading, but now it’s my favorite part of the day!',
-      relationship: 'Student',
+        "I never thought I’d enjoy reading, but now it’s my favorite part of the day!",
+      relationship: "Student",
     },
     {
-      name: 'David O.',
+      name: "David O.",
       review:
         'My son struggled with math before joining Little Luminaries. Now, he loves it and feels so much more confident!"',
-      relationship: 'Parent',
+      relationship: "Parent",
     },
   ];
   const bgColors = [
-    { bg: '#FAE5E1', color: '#F2411F' },
-    { bg: '#FAF3E1', color: '#FBBA18' },
-    { bg: '#F3FAE1', color: '#9FC836' },
-    { bg: '#E1F5FA', color: '#3AC8EE' },
-    { bg: '#F3FAE1', color: '#9FC836' },
-    { bg: '#E1F5FA', color: '#3AC8EE' },
-    { bg: '#FAE5E1', color: '#F2411F' },
-    { bg: '#FAF3E1', color: '#FBBA18' },
+    { bg: "#FAE5E1", color: "#F2411F" },
+    { bg: "#FAF3E1", color: "#FBBA18" },
+    { bg: "#F3FAE1", color: "#9FC836" },
+    { bg: "#E1F5FA", color: "#3AC8EE" },
+    { bg: "#F3FAE1", color: "#9FC836" },
+    { bg: "#E1F5FA", color: "#3AC8EE" },
+    { bg: "#FAE5E1", color: "#F2411F" },
+    { bg: "#FAF3E1", color: "#FBBA18" },
   ];
 
   return (
     <section
+      id="testimonials"
       className={`xl:py-24 lg:py-12  py-5 xl:px-28 lg:px-20 md:px-12 px-5 flex flex-col h-fit items-center ${manrope.className}`}
       style={{
-        background: 'linear-gradient(to bottom, #F5F5F5 0%, #FFFFFF 100%)',
+        background: "linear-gradient(to bottom, #F5F5F5 0%, #FFFFFF 100%)",
       }}
     >
       <div

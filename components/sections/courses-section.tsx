@@ -1,47 +1,48 @@
-import React from 'react';
-import { LumiRed } from '../icons/lumi-red';
-import { manrope } from '@/app/layout';
-import { Reading } from '../icons/reading';
-import { Coding } from '../icons/coding';
-import { English } from '../icons/english';
-import { Maths } from '../icons/maths';
+import React from "react";
+import { LumiRed } from "../icons/lumi-red";
+import { manrope } from "@/app/layout";
+import { Reading } from "../icons/reading";
+import { Coding } from "../icons/coding";
+import { English } from "../icons/english";
+import { Maths } from "../icons/maths";
 
 export const CourseSection = () => {
   const courses = [
     {
-      title: 'Mathematics',
+      title: "Mathematics",
       description:
-        'Develop strong problem-solving skills with hands-on activities and real-world applications.',
+        "Develop strong problem-solving skills with hands-on activities and real-world applications.",
       Icon: <Maths />,
-      color: '#FAE5E1',
+      color: "#FAE5E1",
     },
     {
-      title: 'English',
+      title: "English",
       description:
-        'Improve reading, writing, and communication skills through interactive lessons.',
+        "Improve reading, writing, and communication skills through interactive lessons.",
       Icon: <English />,
-      color: '#FAF3E1',
+      color: "#FAF3E1",
     },
     {
-      title: 'Coding',
+      title: "Coding",
       description:
-        'Introduce kids to technology with beginner-friendly programming lessons.',
+        "Introduce kids to technology with beginner-friendly programming lessons.",
       Icon: <Coding />,
-      color: '#F3FAE1',
+      color: "#F3FAE1",
     },
     {
-      title: 'Reading',
+      title: "Reading",
       description:
-        'Enhance comprehension and foster a love for books through guided reading sessions.',
+        "Enhance comprehension and foster a love for books through guided reading sessions.",
       Icon: <Reading />,
-      color: '#E1F5FA',
+      color: "#E1F5FA",
     },
   ];
   return (
     <section
       className="xl:py-24 sm:px-12 px-5 flex flex-col xl:gap-20 sm:gap-14 gap-5 items-center overflow-auto h-fit"
+      id="courses"
       style={{
-        background: 'linear-gradient(to bottom, #F5F5F5 0%, #FFFFFF 100%)',
+        background: "linear-gradient(to bottom, #F5F5F5 0%, #FFFFFF 100%)",
       }}
     >
       <div className="flex gap-2 items-center border border-orange bg-orange-light rounded-full px-3.5 py-7px mb-2 xl:mx-28 lg:mx-20 mx-12">

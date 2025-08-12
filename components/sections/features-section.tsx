@@ -1,37 +1,40 @@
-import React from 'react';
-import { LumiRed } from '../icons/lumi-red';
-import { manrope } from '@/app/layout';
-import { ArrowRight } from '../icons/arrow-right';
+import React from "react";
+import { LumiRed } from "../icons/lumi-red";
+import { manrope } from "@/app/layout";
+import { ArrowRight } from "../icons/arrow-right";
 
 export const FeaturesSection = () => {
   const features = [
     {
-      feat: 'INTERACTIVE CLASSES',
-      descript: 'Live, interactive online sessions',
-      color: '#F2411F',
-      img: '/online.png',
+      feat: "INTERACTIVE CLASSES",
+      descript: "Live, interactive online sessions",
+      color: "#F2411F",
+      img: "/online.png",
     },
     {
-      feat: 'TOTAL FLEXIBILITY',
-      descript: 'Flexible schedules from anywhere',
-      color: '#FBBA18',
-      img: '/flexible.png',
+      feat: "TOTAL FLEXIBILITY",
+      descript: "Flexible schedules from anywhere",
+      color: "#FBBA18",
+      img: "/flexible.png",
     },
     {
-      feat: 'EXPERIENCED TUTORS',
-      descript: 'Expert tutors with engaging teaching styles',
-      color: '#9FC836',
-      img: '/expert.png',
+      feat: "EXPERIENCED TUTORS",
+      descript: "Expert tutors with engaging teaching styles",
+      color: "#9FC836",
+      img: "/expert.png",
     },
     {
-      feat: 'DISTRACTION-FREE',
-      descript: 'Safe, distraction-free virtual classrooms',
-      color: '#3AC8EE',
-      img: '/expert.png',
+      feat: "DISTRACTION-FREE",
+      descript: "Safe, distraction-free virtual classrooms",
+      color: "#3AC8EE",
+      img: "/expert.png",
     },
   ];
   return (
-    <section className="lg:py-24 py-12 xl:px-28 lg:px-20 sm:px-12 px-5 flex flex-col bg-[#F5F5F5] items-start  ">
+    <section
+      id="features"
+      className="lg:py-24 py-12 xl:px-28 lg:px-20 sm:px-12 px-5 flex flex-col bg-[#F5F5F5] items-start  "
+    >
       <div
         className={`flex gap-2 items-center border border-green bg-[#F3FAE1] rounded-full px-3.5 py-7px mb-2 ${manrope.className}`}
       >
@@ -60,7 +63,7 @@ export const FeaturesSection = () => {
               </div>
               <p
                 className={`text-3xl font-semibold leading-relaxed mt-4 mb-10 px-6 ${
-                  index / 2 === 0 ? 'text-white' : 'text-black'
+                  index / 2 === 0 ? "text-white" : "text-black"
                 }`}
               >
                 {feature.descript}
