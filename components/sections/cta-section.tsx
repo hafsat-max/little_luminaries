@@ -1,3 +1,4 @@
+"use client";
 import { manrope, mcLaren } from "@/app/layout";
 import React from "react";
 import { LumiRed } from "../icons/lumi-red";
