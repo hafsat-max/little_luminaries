@@ -31,7 +31,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${mcLaren.className} ${manrope.className} antialiased`}>
+      <body className={`${mcLaren.className} antialiased`}>
         <MantineProvider>{children}</MantineProvider>
         <Analytics />
       </body>
