@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import "@mantine/core/styles.css";
 import "./globals.css";
-
+import { Analytics } from "@vercel/analytics/next";
 import { McLaren, Manrope } from "next/font/google";
 import { MantineProvider } from "@mantine/core";
 
@@ -31,8 +31,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${mcLaren.className} ${mcLaren.className} antialiased`}>
+      <body className={`${mcLaren.className} ${manrope.className} antialiased`}>
         <MantineProvider>{children}</MantineProvider>
+        <Analytics />
       </body>
     </html>
   );

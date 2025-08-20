@@ -1,8 +1,9 @@
-import { manrope, mcLaren } from '@/app/layout';
-import React from 'react';
-import { LumiRed } from '../icons/lumi-red';
-import AppButton from '../common/app-button';
-import { Calendar } from '../icons/calendar';
+import { manrope, mcLaren } from "@/app/layout";
+import React from "react";
+import { LumiRed } from "../icons/lumi-red";
+import AppButton from "../common/app-button";
+import { Calendar } from "../icons/calendar";
+import { track } from "@vercel/analytics";
 
 export const CTASection = () => {
   return (
@@ -36,6 +37,7 @@ export const CTASection = () => {
           className={`w-fit ${mcLaren.className} lg:py-[18px] lg:px-8 py-[14px] px-6`}
           icon={<Calendar />}
           text="Book a free consultation"
+          onClick={() => track("buy_clicked", { plan: "hobby" })}
         />
       </div>
     </section>
