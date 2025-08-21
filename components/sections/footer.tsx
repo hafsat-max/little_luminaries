@@ -21,10 +21,10 @@ export const Footer = () => {
           <div className="flex flex-col gap-1">
             <p className="text-orange xl:text-base text-sm">Phone:</p>
             <p className="xl:text-xl text-base font-medium text-white">
-              (+49) 15756993544
+              (+234) 8057808308
             </p>
             <p className="xl:text-xl text-base font-medium text-white">
-              (+234) 8057808308
+              (+49) 15756993544
             </p>
           </div>
         </div>
