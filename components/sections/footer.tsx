@@ -40,8 +40,15 @@ export const Footer = () => {
           <div className="flex flex-col gap-1">
             <p className="text-blue-secondary xl:text-base text-sm">Email:</p>
             <p className="font-medium text-white xl:text-xl text-base ">
-              littleluminarieslearning@gmail.com
+              thelittleluminarieslearning@gmail.com
             </p>
+            <a
+              href="mailto:thelittleluminarieslearning@gmail.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              littleluminarieslearning@gmail.com
+            </a>
           </div>
         </div>
       </div>
