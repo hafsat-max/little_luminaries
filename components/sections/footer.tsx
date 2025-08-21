@@ -40,7 +40,7 @@ export const Footer = () => {
           <div className="flex flex-col gap-1">
             <p className="text-blue-secondary xl:text-base text-sm">Email:</p>
             <p className="font-medium text-white xl:text-xl text-base ">
-              abiodunbusari@gmail.com
+              littleluminarieslearning@gmail.com
             </p>
           </div>
         </div>
