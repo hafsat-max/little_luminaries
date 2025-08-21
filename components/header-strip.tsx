@@ -20,7 +20,7 @@ export const HeaderStrip = () => {
           <Instagram />
         </a>
         <a
-          href="mailto:abiodunabusari@gmail.com"
+          href="mailto:littleluminaries@gmail.com"
           target="_blank"
           rel="noopener noreferrer"
         >

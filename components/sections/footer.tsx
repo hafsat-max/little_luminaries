@@ -23,6 +23,9 @@ export const Footer = () => {
             <p className="xl:text-xl text-base font-medium text-white">
               (+49) 15756993544
             </p>
+            <p className="xl:text-xl text-base font-medium text-white">
+              (+234) 8057808308
+            </p>
           </div>
         </div>
         <Divider

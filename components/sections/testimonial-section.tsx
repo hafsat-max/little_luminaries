@@ -6,7 +6,7 @@ import { QuoteUp } from "../icons/quote-up";
 export const TestimonialSection = () => {
   const testionials = [
     {
-      name: "John Doe",
+      name: "Mrs A.",
       review:
         "Little Luminaries has transformed my child's learning experience! The tutors are engaging and make learning fun.",
       relationship: "Parent",
@@ -24,35 +24,35 @@ export const TestimonialSection = () => {
       relationship: "Student",
     },
     {
-      name: "David O.",
+      name: "Mrs M.I",
       review:
         'My son struggled with math before joining Little Luminaries. Now, he loves it and feels so much more confident!"',
       relationship: "Parent",
     },
-    {
-      name: "John Doe",
-      review:
-        "Little Luminaries has transformed my child's learning experience! The tutors are engaging and make learning fun.",
-      relationship: "Parent",
-    },
-    {
-      name: "David O.",
-      review:
-        "The tutors make learning so much fun! My daughter looks forward to every session",
-      relationship: "Parent",
-    },
-    {
-      name: "Emma (8 y/o)",
-      review:
-        "I never thought I’d enjoy reading, but now it’s my favorite part of the day!",
-      relationship: "Student",
-    },
-    {
-      name: "David O.",
-      review:
-        'My son struggled with math before joining Little Luminaries. Now, he loves it and feels so much more confident!"',
-      relationship: "Parent",
-    },
+    // {
+    //   name: "John Doe",
+    //   review:
+    //     "Little Luminaries has transformed my child's learning experience! The tutors are engaging and make learning fun.",
+    //   relationship: "Parent",
+    // },
+    // {
+    //   name: "David O.",
+    //   review:
+    //     "The tutors make learning so much fun! My daughter looks forward to every session",
+    //   relationship: "Parent",
+    // },
+    // {
+    //   name: "Emma (8 y/o)",
+    //   review:
+    //     "I never thought I’d enjoy reading, but now it’s my favorite part of the day!",
+    //   relationship: "Student",
+    // },
+    // {
+    //   name: "David O.",
+    //   review:
+    //     'My son struggled with math before joining Little Luminaries. Now, he loves it and feels so much more confident!"',
+    //   relationship: "Parent",
+    // },
   ];
   const bgColors = [
     { bg: "#FAE5E1", color: "#F2411F" },
