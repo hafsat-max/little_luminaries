@@ -77,7 +77,7 @@ export const Footer = () => {
         </span>
         <ul className="flex items-center gap-5 ">
           <a
-            href=""
+            href="https://www.instagram.com/the_little_luminaries?igsh=YXB6amVhb3c0ZzI%3D&utm_source=qr"
             target="_blank"
             className="border-[0.5px] border-gray-200 rounded-full p-1 bg-white/5"
           >
