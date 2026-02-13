@@ -1,4 +1,6 @@
-import { ButtonHTMLAttributes, ReactNode } from 'react';
+"use client";
+
+import { ButtonHTMLAttributes, ReactNode } from "react";
 
 interface CustomAButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   icon?: ReactNode;
@@ -12,7 +14,7 @@ const AppButton: React.FC<CustomAButtonProps> = ({
   icon,
   text,
   loader,
-  className = '',
+  className = "",
   disabled,
   onLoadCapture,
   ...props

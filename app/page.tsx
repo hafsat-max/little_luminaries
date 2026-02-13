@@ -1,4 +1,5 @@
 import { HeaderStrip } from '@/components/header-strip';
+import { BookMeetingModal } from '@/components/modal/book-meeting-modal';
 import { Navbar } from '@/components/navbar';
 import { AboutSection } from '@/components/sections/about-section';
 import { CourseSection } from '@/components/sections/courses-section';
@@ -7,11 +8,11 @@ import { FeaturesSection } from '@/components/sections/features-section';
 import { Footer } from '@/components/sections/footer';
 import { HeroSection } from '@/components/sections/hero-section';
 import { TestimonialSection } from '@/components/sections/testimonial-section';
-import Image from 'next/image';
 
 export default function Home() {
   return (
     <div className="">
+      <BookMeetingModal />
       <HeaderStrip />
       <Navbar />
       <HeroSection />
