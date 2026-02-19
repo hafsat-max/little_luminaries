@@ -5,8 +5,10 @@ import { LumiRed } from "../icons/lumi-red";
 import AppButton from "../common/app-button";
 import { Calendar } from "../icons/calendar";
 import { track } from "@vercel/analytics";
+import { useBookMeetingModal } from "@/store/useBookingModal";
 
 export const CTASection = () => {
+  const { open } = useBookMeetingModal();
   return (
     <section
       className={` py-12 lg:py-24  xl:px-28 lg:px-20 sm:px-12 px-5  flex sm:flex-row flex-col lg:h-[833px] sm:h-[600px] h-full bg-[#E9F4F7] items-center justify-between lg:gap-0 gap-5`}
@@ -40,7 +42,10 @@ export const CTASection = () => {
           className={`w-fit lg:py-[18px] lg:px-8 py-[14px] px-6`}
           icon={<Calendar />}
           text="Book a free consultation"
-          onClick={() => track("buy_clicked", { plan: "hobby" })}
+          onClick={() => {
+            open();
+            track("buy_clicked", { plan: "hobby" });
+          }}
         />
       </div>
     </section>

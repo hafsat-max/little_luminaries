@@ -3,7 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import { HamburgerIcon } from "./icons/hamburger-icon";
-import { Drawer, Button } from "@mantine/core";
+import { Drawer } from "@mantine/core";
 import { useDisclosure } from "@mantine/hooks";
 import AppButton from "./common/app-button";
 import { Multiply } from "./icons/multiply";
@@ -21,8 +21,9 @@ export const list = [
 ];
 
 export const Navbar = () => {
-  const [opened, { open, close }] = useDisclosure(false);
-  const { active, toggle } = useBookMeetingModal((state) => state);
+  const [opened, { open: openDrawer, close: closeDrawer }] =
+    useDisclosure(false);
+  const { open: openBookingModal } = useBookMeetingModal((state) => state);
 
   return (
     <>
@@ -49,14 +50,14 @@ export const Navbar = () => {
           className="flex max-[770px]:hidden"
           text="Book a meeting"
           onClick={() => {
-            toggle();
+            openBookingModal();
           }}
         />
 
         <div className="hidden max-[770px]:flex">
           <Drawer
             opened={opened}
-            onClose={close}
+            onClose={closeDrawer}
             withCloseButton={false}
             classNames={{
               body: "!p-0 !h-full",
@@ -71,7 +72,7 @@ export const Navbar = () => {
                   src="/luminaries-logo.svg"
                   className="w-[clamp(136px,1vw,170px)]"
                 />
-                <div className="cursor-pointer" onClick={close}>
+                <div className="cursor-pointer" onClick={closeDrawer}>
                   <Multiply />
                 </div>
               </div>
@@ -90,7 +91,8 @@ export const Navbar = () => {
 
               <AppButton
                 onClick={() => {
-                  console.log("Fixes here");
+                  openBookingModal();
+                  closeDrawer();
                 }}
                 className="w-full"
                 text="Book a meeting"
@@ -98,7 +100,7 @@ export const Navbar = () => {
             </div>
           </Drawer>
 
-          <button className="" onClick={open}>
+          <button className="" onClick={openDrawer}>
             <HamburgerIcon />
           </button>
         </div>

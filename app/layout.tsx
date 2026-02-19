@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "@mantine/core/styles.css";
 import "./globals.css";
+import { BookMeetingModal } from "@/components/modal/book-meeting-modal";
 import { Analytics } from "@vercel/analytics/next";
 import { McLaren, Manrope } from "next/font/google";
 import { MantineProvider } from "@mantine/core";
@@ -32,7 +33,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${mcLaren.className} antialiased`}>
-        <MantineProvider>{children}</MantineProvider>
+        <MantineProvider><BookMeetingModal />{children}</MantineProvider>
         <Analytics />
       </body>
     </html>
