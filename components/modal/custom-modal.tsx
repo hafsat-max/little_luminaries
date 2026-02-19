@@ -42,7 +42,9 @@ export const CustomModal: React.FC<CustomModalProps> = ({
             display: "flex",
             alignItems: "center",
             justifyContent: "center",
-            backgroundColor: "#15254E", // 👈 your overlay color here
+            backgroundColor: "rgba(21, 37, 78, 0.8)", // #15254E @ 40%
+           // 👈 blur happens here
+            WebkitBackdropFilter: "blur(24px) saturate(120%)",
             zIndex: 9999,
           }}
         >

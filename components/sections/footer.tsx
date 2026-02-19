@@ -9,8 +9,10 @@ import Link from "next/link";
 import AppButton from "../common/app-button";
 import { Instagram } from "../icons/instagram";
 import { EmailIcon } from "../icons/email-icon";
+import { useBookMeetingModal } from "@/store/useBookingModal";
 
 export const Footer = () => {
+  const { open } = useBookMeetingModal();
   return (
     <footer className=" flex flex-col bg-[url('/Footer.png')] bg-cover bg-no-repeat text-white ">
       <div className="border-b border-white/30 flex sm:flex-row flex-col items-center sm:gap-[60px] xl:px-[100px] lg:px-20 md:px-12 px-5">
@@ -68,7 +70,12 @@ export const Footer = () => {
             </Link>
           ))}
         </ul>
-        <AppButton text="Book a meeting" />
+        <AppButton
+          onClick={() => {
+            open();
+          }}
+          text="Book a meeting"
+        />
       </div>
       <div className="p-px bg-gradient-to-r from-[#FFFFFF00] from-5%  via-[#FFFFFF3D] via-20%  to-[#FFFFFF00] h-[0.5px]"></div>
       <div className="xl:px-[100px] lg:px-20 md:px-12 px-5 sm:py-10 py-6 flex sm:flex-row flex-col sm:items-center justify-between sm:gap-0 gap-5">
