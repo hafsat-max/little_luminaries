@@ -35,7 +35,7 @@ export const Footer = () => {
           color="#FFFFFF3D"
           className="h-full  "
         />{" "}
-        <div className="flex items-center sm:justify-center w-full gap-4  sm:py-16 py-6 ">
+        <div className="flex items-center sm:justify-center w-full gap-4  sm:py-16 py-6 flex-wrap ">
           <div className="border border-white/30 rounded-full sm:p-[18px] p-[14px] bg-white/5">
             <Email />
           </div>

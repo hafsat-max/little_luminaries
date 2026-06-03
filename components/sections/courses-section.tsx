@@ -63,12 +63,12 @@ export const CourseSection = () => {
         </p>
       </div>
       <div
-        className={` grid grid-cols-1 sm:flex gap-6 items-center ${manrope.className} overflow-auto w-full xl:px-28 lg:px-20 px-12 `}
+        className={` grid grid-cols-1 sm:flex gap-6 items-center  justify-between ${manrope.className} overflow-auto w-full xl:px-28 lg:px-20 px-12 `}
       >
         {courses.map((course, index) => (
           <div
             key={index}
-            className="flex flex-col  bg-white rounded-[20px] shadow-lg p-8 max-w-[282px] min-w-[282px] h-[313px] "
+            className="flex flex-col  bg-white rounded-[20px] shadow-lg p-8 min-w-[282px] h-[313px] w-full "
             style={{ backgroundColor: course.color }}
           >
             <div className="mb-8 p-3 bg-white w-fit rounded-xl">
@@ -77,9 +77,7 @@ export const CourseSection = () => {
             <h3 className="text-3xl font-medium text-black mb-3">
               {course.title}
             </h3>
-            <p className="text-base text-[#4B5563] max-w-[218px]">
-              {course.description}
-            </p>
+            <p className="text-base text-[#4B5563] ">{course.description}</p>
           </div>
         ))}
       </div>

@@ -84,13 +84,15 @@ export const TestimonialSection = () => {
       >
         What Parents & Kids Are Saying
       </p>
-      <div className="grid xl:grid-cols-4 lg:grid-cols-3 sm:grid-cols-2 grid-cols-1  gap-8">
+      <div className="grid xl:grid-cols-4 lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-8 ">
         {testionials.map((testimonial, index) => {
           const colorSet = bgColors[index % bgColors.length];
           return (
             <div
               key={index}
-              className="p-8 flex flex-col justify-between h-[322px] rounded-[20px] w-[282px]  shadow-sm"
+              className="p-8 flex flex-col justify-between h-[322px] rounded-[20px] shadow-sm
+             w-full
+              "
               style={{ background: colorSet.bg }}
             >
               <div className="flex flex-col gap-8">
