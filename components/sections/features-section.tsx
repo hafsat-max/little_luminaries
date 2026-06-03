@@ -27,13 +27,13 @@ export const FeaturesSection = () => {
       feat: "DISTRACTION-FREE",
       descript: "Safe, distraction-free virtual classrooms",
       color: "#3AC8EE",
-      img: "/expert.png",
+      img: "/kids-class.png",
     },
   ];
   return (
     <section
       id="features"
-      className="lg:py-24 py-12 xl:px-28 lg:px-20 sm:px-12 px-5 flex flex-col bg-[#F5F5F5] items-start  "
+      className="lg:py-24 py-12 xl:px-28 lg:px-20 sm:px-12 px-5 flex flex-col bg-[#F5F5F5] items-start "
     >
       <div
         className={`flex gap-2 items-center border border-green bg-[#F3FAE1] rounded-full px-3.5 py-7px mb-2 ${manrope.className}`}

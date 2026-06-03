@@ -46,7 +46,7 @@ export const Footer = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              littleluminarieslearning@gmail.com
+              thelittleluminarieslearning@gmail.com
             </a>
           </div>
         </div>

@@ -4,7 +4,7 @@ import { CustomModal } from "./custom-modal";
 import { useBookMeetingModal } from "@/store/useBookingModal";
 import AppButton from "../common/app-button";
 
-const CONTACT_EMAIL = "littleluminarieslearning@gmail.com";
+const CONTACT_EMAIL = "thelittleluminarieslearning@gmail.com";
 
 export const BookMeetingModal = ({}) => {
   const { active, close } = useBookMeetingModal((state) => state);
@@ -18,7 +18,7 @@ export const BookMeetingModal = ({}) => {
   });
 
   const handleInputChange = (
-    event: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+    event: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>,
   ) => {
     const { name, value } = event.target;
     setFormData((prev) => ({ ...prev, [name]: value }));
@@ -28,7 +28,7 @@ export const BookMeetingModal = ({}) => {
     event.preventDefault();
 
     const mailtoLink = `mailto:${CONTACT_EMAIL}?subject=${encodeURIComponent(
-      formData.subject
+      formData.subject,
     )}&body=${encodeURIComponent(formData.message)}`;
 
     window.location.href = mailtoLink;
