@@ -1,4 +1,4 @@
-import { manrope } from "@/app/layout";
+import { manrope } from "@/app/fonts";
 import React from "react";
 import { LumiRed } from "../icons/lumi-red";
 import { QuoteUp } from "../icons/quote-up";

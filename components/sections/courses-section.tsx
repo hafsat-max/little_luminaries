@@ -1,6 +1,6 @@
 import React from "react";
 import { LumiRed } from "../icons/lumi-red";
-import { manrope } from "@/app/layout";
+import { manrope } from "@/app/fonts";
 import { Reading } from "../icons/reading";
 import { Coding } from "../icons/coding";
 import { English } from "../icons/english";

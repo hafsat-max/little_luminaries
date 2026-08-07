@@ -1,0 +1,6 @@
+[
+  { "id": 1, "name": "Amelia Brooks", "initials": "AB", "color": "#F2411F", "parentEmail": "abiodunabusari@gmail.com" },
+  { "id": 2, "name": "Noah Clarke", "initials": "NC", "color": "#3AC8EE", "parentEmail": "noah.parent@example.com" },
+  { "id": 3, "name": "Lily Morgan", "initials": "LM", "color": "#9FC836", "parentEmail": "lily.parent@example.com" },
+  { "id": 4, "name": "Ethan James", "initials": "EJ", "color": "#FBBA18", "parentEmail": "ethan.parent@example.com" }
+]

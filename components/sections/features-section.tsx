@@ -1,6 +1,6 @@
 import React from "react";
 import { LumiRed } from "../icons/lumi-red";
-import { manrope } from "@/app/layout";
+import { manrope } from "@/app/fonts";
 import { ArrowRight } from "../icons/arrow-right";
 
 export const FeaturesSection = () => {

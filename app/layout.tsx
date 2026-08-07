@@ -3,20 +3,8 @@ import "@mantine/core/styles.css";
 import "./globals.css";
 import { BookMeetingModal } from "@/components/modal/book-meeting-modal";
 import { Analytics } from "@vercel/analytics/next";
-import { McLaren, Manrope } from "next/font/google";
 import { MantineProvider } from "@mantine/core";
-import { AppLayout } from "@/components/app-layout";
-
-export const mcLaren = McLaren({
-  weight: "400",
-  subsets: ["latin"],
-  display: "swap",
-});
-export const manrope = Manrope({
-  weight: ["400", "500", "600", "700"],
-  subsets: ["latin"],
-  display: "swap",
-});
+import { manrope, mcLaren } from "./fonts";
 
 export const metadata: Metadata = {
   title: "Little Luminaries",
@@ -33,7 +21,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${mcLaren.className} antialiased`}>
+      <body className={`${mcLaren.variable} ${manrope.variable} antialiased`}>
         <MantineProvider>
           <BookMeetingModal />
           {children}
