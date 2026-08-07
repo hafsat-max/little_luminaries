@@ -1,0 +1,57 @@
+[
+  {
+    "id": "a6e094b0-4a93-4b39-a91d-3d37a37acf81",
+    "createdAt": "2026-08-05T07:52:49.222Z",
+    "students": [
+      {
+        "id": 1,
+        "name": "Amelia Brooks",
+        "parentEmail": "abiodunabusari@gmail.com"
+      },
+      {
+        "id": 2,
+        "name": "Noah Clarke",
+        "parentEmail": "noah.parent@example.com"
+      },
+      {
+        "id": 4,
+        "name": "Ethan James",
+        "parentEmail": "ethan.parent@example.com"
+      }
+    ],
+    "files": [
+      {
+        "name": "abiodun_busari_degree_transcript.pdf",
+        "size": 1239576,
+        "type": "application/pdf",
+        "path": "/Users/Aderinola/Documents/little_luminaries/storage/assignments/a6e094b0-4a93-4b39-a91d-3d37a37acf81/abiodun_busari_degree_transcript.pdf"
+      }
+    ],
+    "deliveryMode": "email"
+  },
+  {
+    "id": "e8ea5d6b-a221-4265-b4fe-694207ce77c7",
+    "createdAt": "2026-08-04T19:45:53.714Z",
+    "students": [
+      {
+        "id": 1,
+        "name": "Amelia Brooks",
+        "parentEmail": "abiodunabusari@gmail.com"
+      },
+      {
+        "id": 2,
+        "name": "Noah Clarke",
+        "parentEmail": "noah.parent@example.com"
+      }
+    ],
+    "files": [
+      {
+        "name": "Screenshot 2026-08-04 at 09.56.39.png",
+        "size": 1063149,
+        "type": "image/png",
+        "path": "/Users/Aderinola/Documents/little_luminaries/storage/assignments/e8ea5d6b-a221-4265-b4fe-694207ce77c7/Screenshot-2026-08-04-at-09.56.39.png"
+      }
+    ],
+    "deliveryMode": "email"
+  }
+]
