@@ -26,8 +26,8 @@ export const CourseSection = () => {
       title: "Coding",
       description:
         "Introduce kids to technology with beginner-friendly programming lessons.",
-      Icon: <Coding />,
       color: "#F3FAE1",
+      Icon: <Coding />,
     },
     {
       title: "Reading",
