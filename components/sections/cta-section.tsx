@@ -11,7 +11,7 @@ export const CTASection = () => {
   const { open } = useBookMeetingModal();
   return (
     <section
-      className={` bg-[#E9F4F7] flex justify-center items-center w-full min-h-[900px] py-12 lg:py-24 xl:py-44`}
+      className={`flex bg-[#E9F4F7] justify-center items-center w-full min-h-[900px] py-12 lg:py-24 xl:py-44`}
     >
       <div className=" xl:px-28 lg:px-20 sm:px-12 px-5 flex sm:flex-row flex-col lg:h-[833px] sm:h-[600px] h-full items-center justify-between gap-10 w-full">
         <figure className="flex-1 w-full flex justify-center">
@@ -34,7 +34,7 @@ export const CTASection = () => {
           <p
             className={`xl:text-6xl text-4xl font-semibold text-black mb-4 leading-tight `}
           >
-            Every Child is Unique – Let&apos;s Find the Right Path
+            Every Child is Unique - Let&apos;s Find the Right Path
           </p>
           <p className=" mb-8  text-base text-[#4B5563]">
             Want to learn more about how Little Luminaries can help your child
